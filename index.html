@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#080b12">
+<meta name="description" content="Prajapati FF — premium fan-made gaming hub with Free Fire tips, squad survival strategies and mobile gaming vibes.">
 <title>Prajapati FF | Gaming Hub</title>
 <style>
 :root{--bg:#080b12;--panel:#101622;--panel2:#151d2b;--text:#f4f7fb;--muted:#9ba8bc;--gold:#ffb52e;--orange:#ff612e;--line:#273247}
@@ -16,14 +17,85 @@ section{padding:28px 0 48px}.section-head{display:flex;justify-content:space-bet
 .cta{margin:15px 0 55px;padding:30px;border-radius:22px;background:linear-gradient(110deg,#ffb52e1e,#ff612e12);border:1px solid #ffb52e35;display:flex;align-items:center;justify-content:space-between;gap:18px}.cta h2{margin:0 0 8px;font-size:25px}.cta p{margin:0;color:var(--muted);font-size:13px;line-height:1.6}
 footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:12px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);background:#f4f7fb;color:#080b12;padding:12px 16px;border-radius:12px;font-size:13px;font-weight:800;opacity:0;pointer-events:none;transition:.25s;z-index:10}.toast.show{opacity:1;transform:translate(-50%,0)}
 @media(max-width:720px){.navlinks{display:none;position:absolute;top:68px;left:0;right:0;padding:18px 4%;background:#080b12;border-bottom:1px solid var(--line);flex-direction:column}.navlinks.open{display:flex}.menu{display:block}.hero{grid-template-columns:1fr;padding-top:45px;gap:25px}.hero h1{letter-spacing:-2px}.hero-art{min-height:250px}.emblem .symbol{font-size:82px}.stats{gap:8px}.stat{padding:14px 10px}.stat b{font-size:20px}.stat span{font-size:10px}.cards{grid-template-columns:1fr}.card{min-height:0}.highlight{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}.cta{align-items:flex-start;flex-direction:column;padding:23px}.cta h2{font-size:22px}}
+
+/* PRO GAMING LOOK UPGRADE */
+:root{--glow:rgba(255,181,46,.22);--glass:rgba(16,22,34,.72)}
+body{background:
+  radial-gradient(ellipse at 85% 8%,rgba(255,83,46,.13),transparent 30%),
+  radial-gradient(ellipse at 8% 35%,rgba(255,181,46,.08),transparent 28%),
+  linear-gradient(180deg,#080b12 0%,#090d16 52%,#080b12 100%)}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.19;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:34px 34px;mask-image:linear-gradient(to bottom,black,transparent 88%)}
+header{background:rgba(8,11,18,.86);box-shadow:0 8px 35px #0003}
+.brand{display:flex;align-items:center;gap:7px}
+.brand:before{content:"亗";display:inline-grid;place-items:center;width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--gold),var(--orange));color:#111;font-size:19px;box-shadow:0 0 22px var(--glow)}
+.navlinks a{transition:color .2s ease}
+.navlinks a:hover{color:var(--gold);text-shadow:0 0 16px var(--glow)}
+.hero{position:relative}
+.hero:before{content:"";position:absolute;width:180px;height:180px;left:-90px;top:22px;border-radius:50%;background:#ffb52e12;filter:blur(55px);pointer-events:none}
+.eyebrow{display:inline-flex;align-items:center;gap:9px}
+.eyebrow:before{content:"";width:20px;height:2px;background:linear-gradient(90deg,var(--gold),var(--orange));display:inline-block}
+.hero h1{text-shadow:0 5px 35px #0006}
+.hero h1 span{background:linear-gradient(100deg,#ffe08b 0%,#ffb52e 45%,#ff7138 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 20px #ff8b3022)}
+.hero p{font-size:16px}
+.btn{position:relative;overflow:hidden;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+.btn:after{content:"";position:absolute;inset:0;transform:translateX(-120%);background:linear-gradient(100deg,transparent,#ffffff35,transparent);transition:transform .5s ease}
+.btn:hover:after{transform:translateX(120%)}
+.btn.primary{box-shadow:0 8px 28px #ff8c2d24}
+.btn.primary:hover{box-shadow:0 10px 34px #ff8c2d3b}
+.hero-art{background:radial-gradient(ellipse at 50% 50%,#5c3027 0%,#211b25 36%,#101622 72%);box-shadow:inset 0 0 50px #0007,0 18px 50px #0003}
+.hero-art:before{width:240px;height:240px;background:radial-gradient(circle,#ffad3c35,transparent 68%);animation:emberPulse 4s ease-in-out infinite}
+.hero-art:after{border-color:#ffb52e35;box-shadow:inset 0 0 35px #ffb52e09}
+.emblem .symbol{font-size:112px;color:#fff4df;text-shadow:0 0 14px #ffb52e55,0 0 50px #ff713833;animation:floatMark 4s ease-in-out infinite}
+.emblem strong{letter-spacing:4px;text-shadow:0 4px 22px #000}
+.tag{box-shadow:0 8px 22px #0004;backdrop-filter:blur(10px)}
+.tag.two{border-color:#ffb52e40}
+.stat{background:linear-gradient(145deg,rgba(21,29,43,.9),rgba(12,17,27,.9));box-shadow:0 10px 30px #0002;transition:transform .2s,border-color .2s}
+.stat:hover{transform:translateY(-3px);border-color:#ffb52e66}
+.card{position:relative;overflow:hidden;background:linear-gradient(145deg,rgba(24,33,49,.96),rgba(13,18,29,.96));box-shadow:0 12px 30px #0002}
+.card:before{content:"";position:absolute;left:0;top:0;width:100%;height:2px;background:linear-gradient(90deg,transparent,var(--gold),var(--orange),transparent);opacity:0;transition:opacity .2s}
+.card:hover:before{opacity:1}
+.card-icon{box-shadow:inset 0 0 20px #ffb52e0c;border:1px solid #ffb52e18}
+.feature{box-shadow:0 15px 35px #0002;background:linear-gradient(140deg,rgba(34,27,31,.92),rgba(14,20,31,.94))}
+.cta{position:relative;overflow:hidden;box-shadow:0 18px 45px #0002}
+.cta:after{content:"亗";position:absolute;right:8%;top:50%;transform:translateY(-50%);font-size:100px;color:#ffb52e0b;pointer-events:none}
+footer{background:#070a10}
+@keyframes floatMark{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes emberPulse{0%,100%{opacity:.65;transform:scale(.96)}50%{opacity:1;transform:scale(1.05)}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+@media(max-width:720px){.hero{padding-top:42px}.hero-art{box-shadow:inset 0 0 38px #0007,0 14px 35px #0003}.emblem .symbol{font-size:90px}.cta:after{font-size:70px;right:5%}}
+
+/* ELITE DASHBOARD FEATURES */
+.scroll-progress{height:3px;position:fixed;top:68px;left:0;width:0;background:linear-gradient(90deg,var(--gold),var(--orange));z-index:8;box-shadow:0 0 15px #ffb52e77}
+.builder{display:grid;grid-template-columns:.75fr 1.25fr;gap:16px}
+.builder-controls,.builder-result,.checklist{border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,rgba(21,29,43,.96),rgba(10,15,24,.97));padding:23px;box-shadow:0 15px 38px #0002}
+.builder-controls{display:flex;flex-direction:column;gap:11px;align-items:stretch}
+.builder-controls label{font-size:10px;font-weight:900;letter-spacing:1.7px;color:var(--gold);margin-top:5px}
+.builder-controls select{width:100%;color:var(--text);background:#080d16;border:1px solid #334057;border-radius:11px;padding:13px 12px;font:inherit;font-size:13px;outline:none}
+.builder-controls select:focus{border-color:var(--gold);box-shadow:0 0 0 3px #ffb52e17}
+.builder-controls .btn{margin-top:10px}
+.result-label{font-size:10px;letter-spacing:1.5px;font-weight:900;color:#a8f0c2;display:flex;align-items:center;gap:8px}
+.live-dot{width:7px;height:7px;border-radius:50%;background:#53e08b;box-shadow:0 0 12px #53e08b;display:inline-block}
+.builder-result h3{font-size:25px;margin:15px 0 8px;letter-spacing:-.6px}
+.builder-result p{color:var(--muted);font-size:14px;line-height:1.7;margin:0}
+.builder-result .tips{margin:14px 0 16px}
+.copy-btn{background:#ffffff06}
+.checklist{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.checklist label{display:flex;align-items:center;gap:12px;border:1px solid #ffffff12;background:#ffffff04;border-radius:13px;padding:15px;font-size:13px;color:#dce3ef;cursor:pointer;transition:border-color .2s,background .2s}
+.checklist label:has(input:checked){border-color:#53e08b55;background:#53e08b0b;color:#baf5cd}
+.checklist input{accent-color:#53e08b;width:17px;height:17px;flex-shrink:0}
+#checkCount{color:var(--gold);font-weight:800}
+.btn:focus-visible,a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+@media(max-width:720px){.scroll-progress{top:68px}.builder{grid-template-columns:1fr}.builder-controls,.builder-result{padding:19px}.checklist{grid-template-columns:1fr;padding:13px}.builder-result h3{font-size:22px}}
+
 </style>
 </head>
 <body>
-<header><div class="wrap nav"><a class="brand" href="#home">PRAJAPATI <span>FF</span></a><nav class="navlinks" id="navlinks"><a href="#home">Home</a><a href="#gaming">Gaming</a><a href="#tips">Pro Tips</a><a href="#community">Community</a></nav><button class="menu" id="menu" aria-label="Toggle navigation">☰</button></div></header>
+<header><div class="wrap nav"><a class="brand" href="#home">PRAJAPATI <span>FF</span></a><nav class="navlinks" id="navlinks"><a href="#home">Home</a><a href="#gaming">Gaming</a><a href="#tips">Pro Tips</a><a href="#loadout-builder">Loadout Builder</a><a href="#community">Community</a></nav><button class="menu" id="menu" aria-label="Toggle navigation">☰</button></div></header>
+<div class="scroll-progress" id="scrollProgress"></div>
 <main>
 <div class="wrap">
 <section class="hero" id="home">
-<div><div class="eyebrow">Your gaming zone • Est. 2026</div><h1>PLAY BOLD.<br><span>WIN SMART.</span></h1><p>Welcome to Prajapati FF — a dark, premium gaming hub for battle royale vibes, clutch moments, squad strategies and gamer entertainment.</p><div class="actions"><a class="btn primary" href="#gaming">Explore Gaming ↗</a><a class="btn" href="#tips">Check Pro Tips</a></div></div>
+<div><div class="eyebrow">Your gaming zone • Est. 2026 <span style="display:inline-flex;align-items:center;gap:6px;border:1px solid #ffb52e35;border-radius:99px;padding:5px 8px;font-size:10px;letter-spacing:1px;color:#f4f7fb;background:#ffffff08"><i style="display:inline-block;width:6px;height:6px;border-radius:50%;background:#53e08b;box-shadow:0 0 10px #53e08b"></i> FAN HUB</span></div><h1>PLAY BOLD.<br><span>WIN SMART.</span></h1><p>Welcome to Prajapati FF — a dark, premium gaming hub for battle royale vibes, clutch moments, squad strategies and gamer entertainment.</p><div class="actions"><a class="btn primary" href="#gaming">Explore Gaming ↗</a><a class="btn" href="#tips">Check Pro Tips</a></div></div>
 <div class="hero-art" aria-label="Prajapati FF gaming emblem"><div class="tag one">SQUAD • BR</div><div class="emblem"><div class="symbol">亗</div><strong>PRAJAPATI</strong><small>FREE FIRE HUB</small></div><div class="tag two">LEVEL UP YOUR GAME</div></div>
 </section>
 <div class="stats"><div class="stat"><b>🎮 BR</b><span>Battle Royale Zone</span></div><div class="stat"><b>⚡ 2-FINGER</b><span>Simple control mindset</span></div><div class="stat"><b>🔥 CLUTCH</b><span>Play smart, stay ready</span></div></div>
@@ -36,6 +108,8 @@ footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-s
 <div class="feature"><div class="eyebrow">Battle royale</div><h3>Fight smart, survive longer.</h3><p>Winning isn't only about eliminations. Good positioning and teamwork can turn a tough match around.</p><ul class="tips"><li><span>01</span> Take cover before healing.</li><li><span>02</span> Share enemy locations with your squad.</li><li><span>03</span> Rotate before the zone gets tight.</li><li><span>04</span> Don't chase every fight.</li></ul></div>
 <div class="feature"><div class="eyebrow">Aim routine</div><h3>Warm up before ranked.</h3><p>Keep practice short, repeatable and comfortable for your controls.</p><ul class="tips"><li><span>01</span> Start with a few minutes of target tracking.</li><li><span>02</span> Practise controlled flicks, not random swipes.</li><li><span>03</span> Change one sensitivity setting at a time.</li><li><span>04</span> Review what worked after each match.</li></ul></div>
 </div></section>
+<section id="loadout-builder"><div class="section-head"><div><div class="eyebrow">Your next match starts here</div><h2>Pro Loadout Builder</h2></div><p>Pick your style to get a quick game plan.</p></div><div class="builder"><div class="builder-controls"><label for="playstyle">PLAYSTYLE</label><select id="playstyle"><option value="balanced">Fight + Survival</option><option value="survival">Survival First</option><option value="aggressive">Aggressive Rusher</option><option value="support">Squad Support</option></select><label for="controls">CONTROL SETUP</label><select id="controls"><option value="two">2-finger mobile</option><option value="three">3-finger mobile</option><option value="four">4-finger / claw</option></select><button class="btn primary" id="buildPlan" type="button">Build My Plan ↗</button></div><div class="builder-result" aria-live="polite"><div class="result-label"><span class="live-dot"></span> MATCH PLAN READY</div><h3 id="planTitle">Balanced Squad Player</h3><p id="planText">Take smart fights from cover, keep a teammate nearby, and rotate before the zone gets crowded.</p><ul class="tips" id="planTips"><li><span>01</span> Carry a comfortable close-range and mid-range option.</li><li><span>02</span> Heal behind cover and communicate enemy positions.</li><li><span>03</span> Save movement skills for a safe reposition.</li></ul><button class="btn copy-btn" id="copyPlan" type="button">Copy game plan ⧉</button></div></div></section>
+<section id="match-check"><div class="section-head"><div><div class="eyebrow">Before you queue</div><h2>Match-Ready Checklist</h2></div><p id="checkCount">0 of 4 ready</p></div><div class="checklist"><label><input type="checkbox"> <span>Battery and connection are ready</span></label><label><input type="checkbox"> <span>HUD and sensitivity feel comfortable</span></label><label><input type="checkbox"> <span>Squad roles and landing spot agreed</span></label><label><input type="checkbox"> <span>Headphones / game audio checked</span></label></div></section>
 <section id="community"><div class="cta"><div><h2>Welcome to the Prajapati FF squad.</h2><p>Gaming, good vibes and smarter plays — all in one place.<br>More clips, tournament details and social links can be added here.</p></div><button class="btn primary" id="join">Join the Vibe ↗</button></div></section>
 </div></main>
 <footer><div class="wrap foot"><span>© 2026 Prajapati FF • Fan-made gaming hub</span><span>Made for mobile • Dark & Premium</span></div></footer>
@@ -45,6 +119,22 @@ const menu=document.getElementById('menu'),links=document.getElementById('navlin
 menu.addEventListener('click',()=>links.classList.toggle('open'));
 links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
 const join=document.getElementById('join'),toast=document.getElementById('toast');
-join.addEventListener('click',()=>{toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),2400)});
+join.addEventListener('click',()=>showToast('Add your official community link here!'));
+const progress=document.getElementById('scrollProgress');
+function updateProgress(){const max=document.documentElement.scrollHeight-window.innerHeight;progress.style.width=(max>0?(window.scrollY/max)*100:0)+'%'}
+window.addEventListener('scroll',updateProgress,{passive:true});updateProgress();
+const plans={
+ balanced:{title:'Balanced Squad Player',text:'Take smart fights from cover, keep a teammate nearby, and rotate before the zone gets crowded.',tips:['Carry comfortable close-range and mid-range options.','Heal behind cover and call enemy positions clearly.','Save movement skills for a safe reposition.']},
+ survival:{title:'Survival-First Strategist',text:'Prioritise safe rotations, strong cover and reliable team spacing. Fight when the position gives you an advantage.',tips:['Move early toward the next safe zone.','Avoid crossing open ground without a plan.','Keep utility for escapes and final-zone movement.']},
+ aggressive:{title:'Controlled Entry Fragger',text:'Create pressure with your squad, but avoid rushing alone. Make each push with cover, information and an exit route.',tips:['Ask a teammate to trade damage with you.','Use cover to reset between bursts.','Disengage if the first push loses its advantage.']},
+ support:{title:'Squad Anchor & Support',text:'Help your squad stay organised by sharing information, holding safe angles and making revives a team decision.',tips:['Call enemy direction and distance early.','Hold a safe angle while teammates reposition.','Revive only when cover and timing make sense.']}
+};
+const playstyle=document.getElementById('playstyle'),controls=document.getElementById('controls');
+function renderPlan(){const p=plans[playstyle.value];const controlText=controls.options[controls.selectedIndex].text;document.getElementById('planTitle').textContent=p.title;document.getElementById('planText').textContent=p.text+' Control setup: '+controlText+'.';document.getElementById('planTips').innerHTML=p.tips.map((tip,i)=>'<li><span>'+String(i+1).padStart(2,'0')+'</span> '+tip+'</li>').join('')}
+document.getElementById('buildPlan').addEventListener('click',renderPlan);playstyle.addEventListener('change',renderPlan);controls.addEventListener('change',renderPlan);
+document.getElementById('copyPlan').addEventListener('click',async()=>{const p=plans[playstyle.value];const textToCopy=p.title+'\n'+p.text+'\n'+p.tips.map((t,i)=>(i+1)+'. '+t).join('\n');try{await navigator.clipboard.writeText(textToCopy);showToast('Game plan copied!')}catch(e){showToast('Select and copy your game plan text.')}});
+function showToast(message){toast.textContent=message;toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),2200)}
+const checks=[...document.querySelectorAll('.checklist input')];function updateChecks(){const count=checks.filter(c=>c.checked).length;document.getElementById('checkCount').textContent=count+' of '+checks.length+' ready'}checks.forEach(c=>c.addEventListener('change',updateChecks));
+
 </script>
 </body></html>
